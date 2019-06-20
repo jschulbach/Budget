@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{5255EBA1-612D-4092-B918-4ABF9DDBA3DB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+    <Files>
+      <File FileName="Pages/Accounts/Edit.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Pages/Accounts/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Accounts/Create.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Accounts/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Accounts/Index.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Models/Account.cs" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Pages/Index.cshtml.cs" Line="1" Column="1" />
+      <File FileName="wwwroot/js/site.js" Line="1" Column="1" />
+      <File FileName="Models/Item.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Budget" expanded="True">
+            <Node name="Budget" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Accounts" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Accounts" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Budget PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
