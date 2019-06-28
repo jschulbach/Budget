@@ -19,6 +19,7 @@ namespace Budget.Pages.Accounts
         }
 
         public Account Account { get; set; }
+        public PaginatedList<Transaction> Transaction { get;set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,6 +29,18 @@ namespace Budget.Pages.Accounts
             }
 
             Account = await _context.Accounts.FirstOrDefaultAsync(m => m.ID == id);
+
+            IQueryable<Transaction> transactionIQ = from t in _context.Transactions select t;
+            
+            //if (!String.IsNullOrEmpty(searchString))
+            //{
+                transactionIQ = transactionIQ.Where(t => Account.ID == id
+                                    /* || t.Payee.Name.Contains(searchString)*/);
+            //}
+
+            int pageSize = 3;
+            Transaction = await PaginatedList<Transaction>.CreateAsync(
+               transactionIQ.AsNoTracking(), 1, pageSize);
 
             if (Account == null)
             {

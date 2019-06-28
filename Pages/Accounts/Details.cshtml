@@ -32,6 +32,28 @@
     </dl>
 </div>
 <div>
+<table>
+@foreach (var item in Model.Transaction) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Account.Name)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.TransactionID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.TransactionID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.TransactionID">Delete</a>
+            </td>
+        </tr>
+}     
+</table>
+</div>
+<div>
     <a asp-page="./Edit" asp-route-id="@Model.Account.ID">Edit</a> |
     <a asp-page="./Index">Back to List</a>
 </div>
